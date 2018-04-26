@@ -97,7 +97,7 @@ let rec parse_one e (origfilename as filename) =
  in
  let inode = Digest.file filename in
  if List.mem_assoc inode !parsed then begin
-  if not !parse_silent then Printf.eprintf "already loaded %s\n%!" origfilename;
+  if not !parse_silent then Printf.printf "already loaded %s\n%!" origfilename;
   match !(List.assoc inode !parsed) with
   | None -> []
   | Some l -> l
