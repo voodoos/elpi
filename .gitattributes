@@ -1,1 +1,3 @@
 *.elpi linguist-language=prolog
+*.mod linguist-language=prolog
+*.sig linguist-language=prolog
